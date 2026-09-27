@@ -41,7 +41,6 @@ body {
 a {
     color: var(--primary);
     text-decoration: none;
-    transition: color 0.2s ease;
 }
 
 a:hover {
@@ -712,55 +711,6 @@ form .button {
     }
 }
 
-#experiences {
-    padding: 0;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-#experiences > h2 {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    margin: 0 0 0.5rem;
-    color: #292725;
-
-    font-size: 1.35rem;
-    font-weight: 700;
-    letter-spacing: -0.3px;
-    text-transform: none;
-}
-
-#experiences > h2::before {
-    content: "";
-
-    display: block;
-    flex-shrink: 0;
-
-    width: 4px;
-    height: 24px;
-
-    background: #426B50;
-    border-radius: 5px;
-}
-
-#experiences > h2::after {
-    content: none;
-    display: none;
-}
-
-#experiences .experience-card:hover {
-    transform: translateY(-3px);
-    border-color: #B8C9B9;
-    box-shadow: 0 10px 24px rgba(32, 41, 35, 0.08);
-}
-
 #experiences .experience-header {
     display: flex;
     align-items: center;
@@ -809,91 +759,13 @@ form .button {
 
 }
 
-#formation,
-#experiences {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-    padding: 0;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-}
-
-#formation > .section-heading,
-#experiences > .section-heading {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    margin: 0 0 0.5rem;
-
-    color: #292725;
-    font-size: 1.45rem;
-    font-weight: 700;
-    letter-spacing: -0.3px;
-    text-transform: none;
-}
-
-#formation > .section-heading::before,
-#experiences > .section-heading::before {
-    content: "";
-
-    display: block;
-    flex-shrink: 0;
-
-    width: 4px;
-    height: 24px;
-
-    background: #426B50;
-    border-radius: 5px;
-}
-
-#formation > .section-heading::after,
-#experiences > .section-heading::after {
-    content: none;
-    display: none;
-}
-
-#formation .formation-card,
-#experiences .experience-card {
-    position: relative;
-
-    margin: 0;
-    padding: 0 0 1.5rem;
-
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid var(--border);
-    border-radius: 0;
-
-    box-shadow: none;
-
-    transition:
-        transform 0.25s ease,
-        border-color 0.25s ease;
-}
-
-#formation .formation-card:hover,
-#experiences .experience-card:hover {
-    transform: translateX(4px);
-    border-color: #B8C9B9;
-}
-
-#formation .formation-card::before,
-#experiences .experience-card::before {
-    content: none;
-    display: none;
-}
-
 #formation .formation-card .date {
     display: inline-block;
 
     margin: 0 0 0.5rem;
     padding: 0.25rem 0.75rem;
 
-    background: #FFFFFF;
+    background: #E7EDE7;
     border-radius: 999px;
 
     color: #426B50;
@@ -901,38 +773,6 @@ form .button {
     font-weight: 600;
     letter-spacing: 0.3px;
     text-transform: none;
-}
-
-#formation .formation-card > p:last-child {
-    margin: 0;
-    color: #56615A;
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
-
-@media (max-width: 600px) {
-    #formation .formation-card,
-    #experiences .experience-card {
-        padding: 1rem;
-        border-radius: 12px;
-    }
-
-    #formation > .section-heading,
-    #experiences > .section-heading {
-        font-size: 1.15rem;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    #formation .formation-card,
-    #experiences .experience-card {
-        transition: none;
-    }
-
-    #formation .formation-card:hover,
-    #experiences .experience-card:hover {
-        transform: none;
-    }
 }
 
 [data-reveal] {
@@ -1157,7 +997,8 @@ button:hover {
     box-shadow: none;
 }
 
-#formation > .section-heading {
+#formation > .section-heading,
+#experiences > .section-heading {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -1170,7 +1011,8 @@ button:hover {
     letter-spacing: -0.3px;
 }
 
-#formation > .section-heading::before {
+#formation > .section-heading::before,
+#experiences > .section-heading::before {
     content: "";
 
     width: 4px;
@@ -1182,7 +1024,8 @@ button:hover {
     border-radius: 5px;
 }
 
-#formation > .section-heading::after {
+#formation > .section-heading::after,
+#experiences > .section-heading::after {
     content: none;
 }
 
@@ -1248,19 +1091,6 @@ button:hover {
     margin-bottom: 0.5rem;
 }
 
-#formation .date {
-    margin: 0;
-    padding: 0;
-
-    background: transparent;
-
-    color: #426B50;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
-}
-
 #formation .formation-status {
     padding: 0.2rem 0.55rem;
 
@@ -1303,7 +1133,7 @@ button:hover {
 
     margin: 0;
 
-    color: #68716A;
+    color: #56615A;
     font-size: 0.9rem;
     line-height: 1.6;
 }
@@ -1341,35 +1171,6 @@ button:hover {
     background: transparent;
     border: none;
     box-shadow: none;
-}
-
-#experiences > .section-heading {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    margin: 0 0 0.75rem;
-
-    color: #292725;
-    font-size: 1.35rem;
-    font-weight: 700;
-    letter-spacing: -0.3px;
-}
-
-#experiences > .section-heading::before {
-    content: "";
-
-    width: 4px;
-    height: 24px;
-
-    flex-shrink: 0;
-
-    background: #426B50;
-    border-radius: 5px;
-}
-
-#experiences > .section-heading::after {
-    content: none;
 }
 
 #experiences > .experience-list {
@@ -1420,16 +1221,6 @@ button:hover {
 
 #experiences .experience-header {
     margin-bottom: 0.75rem;
-}
-
-#experiences .date {
-    margin: 0 0 0.2rem;
-
-    color: #426B50;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
 }
 
 #experiences .experience-card h3 {
@@ -1705,7 +1496,6 @@ button:hover {
   }
 }
 
-.site-header,
 main,
 .site-footer {
     position: relative;
