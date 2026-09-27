@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV en ligne de Charles ABED, étudiant en informatique." data-i18n-content="metaDescription">
+    <title>Charles ABED | CV</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+    <div id="react-background"></div>
+    <header class="site-header">
+        <nav class="navigation container" aria-label="Navigation principale" data-i18n-aria="navigationLabel">
+            <a class="logo" href="#accueil">CA.</a>
+            <ul class="nav-links">
+                <li><a href="#profil" data-i18n="navProfile">Profil</a></li>
+                <li><a href="#formation" data-i18n="navEducation">Formation</a></li>
+                <li><a href="#experiences" data-i18n="navExperience">Expériences</a></li>
+                <li><a href="#projets" data-i18n="navProjects">Projets</a></li>
+                <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+            </ul>
+
+            <div class="language-switch" role="group" aria-label="Choix de la langue" data-i18n-aria="languageGroup">
+                <button type="button" data-language="en" aria-label="Switch to English" aria-pressed="false" data-i18n-aria="switchToEnglish">ENG</button>
+                <button type="button" data-language="fr" aria-label="Passer le site en français" aria-pressed="true" data-i18n-aria="switchToFrench">FR</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero section" id="accueil">
+            <p class="eyebrow" data-i18n="heroEyebrow">CURRICULUM VITAE · 2026</p>
+
+            <h1>Charles <span>ABED</span></h1>
+
+            <p class="hero-subtitle" data-i18n="heroSubtitle">
+                De la Pharmacie à la Santé numérique
+            </p>
+
+            <p class="hero-description" data-i18n="heroDescription">
+                Titulaire d’un niveau BAC+4 en pharmacie et étudiant
+                en pré-MSc à Epitech Nantes, je me forme à l’informatique
+                avec un objectif : contribuer à l’innovation en santé numérique.
+            </p>
+            <p class="mu" data-i18n="heroObjective">
+                Je recherche une alternance de janvier à août 2027,
+                où je pourrai mettre à profit ma double culture
+                santé et numérique dans des projets de gestion,
+                d’analyse de données et de transformation digitale.
+            </p>
+
+            <div class="hero-actions">
+                <a class="button button-primary" href="#contact" data-i18n="ctaContact">
+                    Me contacter
+                </a>
+
+                <a class="button button-secondary" href="#experiences" data-i18n="ctaExplore">
+                    Découvrir mon parcours ↓
+                </a>
+            </div>
+        </section>
+
+        <div class="resume-layout">
+            <aside class="sidebar">
+                <section class="card section" id="profil" data-reveal>
+                    <h2 data-i18n="sectionProfile">Profil</h2>
+
+                    <p data-i18n="profileParagraphOne">
+                        Mon parcours relie deux domaines qui m'intéressent
+                        particulièrement : la santé et l'informatique.
+                    </p>
+
+                    <p data-i18n="profileParagraphTwo">
+                        Après plusieurs années d'études en pharmacie, je me
+                        forme aujourd'hui au développement informatique à
+                        Epitech Nantes, avec l'envie de mettre ces deux
+                        domaines en relation.
+                    </p>
+                </section>
+
+                <section class="card section" id="competences" data-reveal>
+                    <h2 data-i18n="sectionSkills">Compétences</h2>
+
+                    <h3 data-i18n="skillsTools">Maîtrise des outils</h3>
+
+                    <h4 data-i18n="skillsDigital">Digital</h4>
+                    <ul class="tag-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>JavaScript</li>
+                    </ul>
+
+                    <h4 data-i18n="skillsOffice">Bureautique</h4>
+                    <ul class="tag-list">
+                        <li>Word</li>
+                        <li>Excel</li>
+                        <li>PowerPoint</li>
+                        <li>Outlook</li>
+                    </ul>
+
+                    <h4 data-i18n="skillsPharmacy">Officine</h4>
+                    <ul class="tag-list">
+                        <li data-i18n="pharmacySkillOne">Accueil et conseil patient</li>
+                        <li data-i18n="pharmacySkillTwo">Suivi de dossier</li>
+                        <li data-i18n="pharmacySkillThree">Gestion de stock</li>
+                        <li data-i18n="pharmacySkillFour">Gestion des commandes</li>
+                        <li>AFGSU2</li>
+                    </ul>
+
+                    <h4 data-i18n="skillsInterpersonal">Savoir-être</h4>
+                    <ul class="tag-list">
+                        <li data-i18n="softSkillOne">Qualités relationnelles</li>
+                        <li data-i18n="softSkillTwo">Travail en équipe</li>
+                        <li data-i18n="softSkillThree">Sens de l'adaptation</li>
+                        <li data-i18n="softSkillFour">Esprit d'initiative</li>
+                        <li data-i18n="softSkillFive">Gestion du stress</li>
+                    </ul>
+
+                    <h4 data-i18n="skillsOther">Autres compétences</h4>
+                    <ul class="tag-list">
+                        <li data-i18n="otherSkillOne">Rigueur scientifique</li>
+                        <li data-i18n="otherSkillTwo">Analyse et résolution de problèmes</li>
+                        <li data-i18n="otherSkillThree">Autonomie</li>
+                    </ul>
+                </section>
+
+                <section class="card section" id="langues" data-reveal>
+                    <h2 data-i18n="sectionLanguages">Langues</h2>
+                    <p data-i18n="languageSpanish">Espagnol : niveau B1</p>
+                    <p data-i18n="languageEnglish">Anglais : niveau C2</p>
+                </section>
+
+                <section class="card section" id="coordonnees" data-reveal>
+                    <h2 data-i18n="sectionDetails">Coordonnées</h2>
+
+                    <ul class="contact-details">
+                        <li>
+                            <span class="contact-label" data-i18n="labelLocation">Localisation</span>
+                            <p>Nantes, France</p>
+                        </li>
+
+                        <li>
+                            <span class="contact-label" data-i18n="labelEmail">E-mail</span>
+                            <a href="mailto:charlesabed44@gmail.com">
+                                charlesabed44@gmail.com
+                            </a>
+                        </li>
+
+                        <li>
+                            <span class="contact-label" data-i18n="labelPhone">Téléphone</span>
+                            <a href="tel:+33771796584">
+                                0771796584
+                            </a>
+                        </li>
+
+                        <li>
+                            <span class="contact-label" data-i18n="labelLinkedIn">LinkedIn</span>
+                            <a href="https://www.linkedin.com/in/charles-abed/?isSelfProfile=true"
+                            target="_blank"
+                            rel="noopener">
+                                <span data-i18n="linkLinkedIn">Mon profil LinkedIn</span> ↗
+                            </a>
+                        </li>
+                        <li>
+                            <span class="contact-label" data-i18n="labelGitHub">GitHub</span>
+                            <a href="https://github.com/CharlesAbed"
+                            target="_blank"
+                            rel="noopener">
+                                <span data-i18n="linkGitHub">Mon profil GitHub</span> ↗
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="card section" id="interets" data-reveal>
+                    <h2 data-i18n="sectionInterests">Centres d'intérêt</h2>
+
+                    <ul class="interest-list">
+                        <li>
+                            <span class="interest-icon">💻</span>
+                            <div>
+                                <h3 data-i18n="interestTechTitle">Informatique</h3>
+                                <p data-i18n="interestTechDescription">Développement, programmation et nouvelles technologies.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="interest-icon">🎹</span>
+                            <div>
+                                <h3 data-i18n="interestMusicTitle">Musique</h3>
+                                <p data-i18n="interestMusicDescription">Pratique pianistique. J'ai notamment donné des cours débutant à intermédiaire à des enfants et des adultes.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="interest-icon">🎮</span>
+                            <div>
+                                <h3 data-i18n="interestGamingTitle">Jeux vidéo</h3>
+                                <p data-i18n="interestGamingDescription">Stratégie, réflexion et univers vidéoludiques.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="interest-icon">📚</span>
+                            <div>
+                                <h3 data-i18n="interestLearningTitle">Apprentissage</h3>
+                                <p data-i18n="interestLearningDescription">Découverte de nouvelles connaissances et développement personnel.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+            </aside>
+
+            <div class="main-column">
+                <section class="section" id="formation">
+                    <h2 class="section-heading" data-reveal data-i18n="sectionEducation">Formation</h2>
+
+                    <div class="formation-list">
+                        <article class="formation-card formation-current" data-reveal>
+                            <div class="formation-meta">
+                                <p class="date" data-i18n="datePresent">2026 – en cours</p>
+                                <span class="formation-status" data-i18n="statusCurrent">Formation actuelle</span>
+                            </div>
+
+                            <h3 data-i18n="degreeCurrent">Pré-MSc Informatique</h3>
+
+                            <p class="institution">Epitech · Nantes</p>
+
+                            <p class="formation-description" data-i18n="educationDescriptionCurrent">
+                                Formation aux fondamentaux de l'informatique
+                                et du développement.
+                            </p>
+                        </article>
+
+                        <article class="formation-card formation-previous" data-reveal>
+                            <p class="date" data-i18n="datePrevious">Parcours antérieur</p>
+
+                            <h3 data-i18n="degreePrevious">Études de pharmacie</h3>
+
+                            <p class="institution">Université de Nantes</p>
+
+                            <p class="formation-description" data-i18n="educationDescriptionPrevious">
+                                Parcours universitaire en sciences pharmaceutiques.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="section" id="experiences">
+                    <h2 class="section-heading" data-reveal data-i18n="sectionExperience">
+                        Expériences professionnelles
+                    </h2>
+
+                    <div class="experience-list">
+                        <article class="experience-card" data-reveal>
+                            <div class="experience-header">
+                                <div>
+                                    <p class="date">2023 – 2025</p>
+                                    <h3>Pharmacie des Bourderies</h3>
+                                    <p class="institution" data-i18n="employmentPermanent">CDI · Nantes</p>
+                                </div>
+                            </div>
+
+                            <p class="experience-summary" data-i18n="experienceSummary">
+                                Expérience en officine dans un environnement
+                                nécessitant rigueur, organisation et gestion
+                                simultanée de nombreuses demandes.
+                            </p>
+
+                            <ul class="experience-list-items">
+                                <li data-i18n="experienceOneTaskOne">Accueil, conseil et accompagnement des patients</li>
+                                <li data-i18n="experienceOneTaskTwo">Suivi des dossiers et contrôle des ordonnances</li>
+                                <li data-i18n="experienceOneTaskThree">Gestion des stocks, commandes et caisses</li>
+                                <li data-i18n="experienceOneTaskFour">Participation aux activités de vaccination, prévention et dépistage</li>
+                            </ul>
+
+                            <div class="transferable-skills">
+                                <span data-i18n="skillAccuracy">Rigueur</span>
+                                <span data-i18n="skillOrganization">Organisation</span>
+                                <span data-i18n="skillPriorities">Gestion des priorités</span>
+                                <span data-i18n="skillUserRelations">Relation utilisateur</span>
+                            </div>
+                        </article>
+
+                        <article class="experience-card" data-reveal>
+                            <div class="experience-header">
+                                <div>
+                                    <p class="date">2022 – 2023</p>
+                                    <h3>Pharmacie de Poincaré</h3>
+                                    <p class="institution" data-i18n="employmentInternship">Stage de 3e année · CDD · Nantes</p>
+                                </div>
+                            </div>
+
+                            <ul class="experience-list-items">
+                                <li data-i18n="experienceTwoTaskOne">Accueil et conseil des patients</li>
+                                <li data-i18n="experienceTwoTaskTwo">Suivi des dossiers patients</li>
+                                <li data-i18n="experienceTwoTaskThree">Gestion des stocks, commandes et caisses</li>
+                                <li data-i18n="experienceTwoTaskFour">Utilisation et gestion du robot de préparation des ordonnances</li>
+                            </ul>
+
+                            <div class="transferable-skills">
+                                <span data-i18n="skillOrganization">Organisation</span>
+                                <span data-i18n="skillProcedures">Procédures</span>
+                                <span data-i18n="skillAutomation">Outils automatisés</span>
+                            </div>
+                        </article>
+
+                        <article class="experience-card" data-reveal>
+                            <div class="experience-header">
+                                <div>
+                                    <p class="date">2022</p>
+                                    <h3>Pharmacie de la Croix-Bonneau</h3>
+                                    <p class="institution">Stage de 4e année · Nantes</p>
+                                </div>
+                            </div>
+
+                            <ul class="experience-list-items">
+                                <li data-i18n="experienceThreeTaskOne">Accueil et conseil des patients</li>
+                                <li data-i18n="experienceThreeTaskTwo">Délivrance des médicaments</li>
+                                <li data-i18n="experienceThreeTaskThree">Suivi des dossiers patients</li>
+                                <li data-i18n="experienceThreeTaskFour">Gestion des stocks et des commandes</li>
+                            </ul>
+
+                            <div class="transferable-skills">
+                                <span data-i18n="skillAccuracy">Rigueur</span>
+                                <span data-i18n="skillOrganization">Organisation</span>
+                                <span data-i18n="skillPatientRelations">Relation patient</span>
+                            </div>
+                        </article>
+
+                        <article class="experience-card" data-reveal>
+                            <div class="experience-header">
+                                <div>
+                                    <p class="date">Été 2022</p>
+                                    <h3>Clinique Jules Verne</h3>
+                                    <p class="institution" data-i18n="employmentHospital">
+                                        CDD – Préparateur en pharmacie · PUI · Nantes
+                                    </p>
+                                </div>
+                            </div>
+
+                            <ul class="experience-list-items">
+                                <li>
+                                    <span data-i18n="experienceFourTaskOne">Préparation des médicaments destinés aux différents
+                                    services de la clinique
+                                    </span>
+                                </li>
+                                <li>
+                                    <span data-i18n="experienceFourTaskTwo">Rangement des médicaments et dispositifs médicaux
+                                    dans les arsenaux des services
+                                    </span>
+                                </li>
+                            </ul>
+
+                            <div class="transferable-skills">
+                                <span data-i18n="skillAccuracy">Rigueur</span>
+                                <span data-i18n="skillProcedureCompliance">Respect des procédures</span>
+                                <span data-i18n="skillOrganization">Organisation</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <details class="more-details">
+                        <summary data-i18n="moreExperienceSummary">Voir davantage d'informations</summary>
+                        <p data-i18n="moreExperienceDescription">
+                            Différentes expériences professionnelles hors du domaine
+                            pharmaceutique, notamment dans la grande distribution
+                            (CDD chez Intermarché en qualité d'employé polyvalent et drive),
+                            dans la distribution de prospectus pour Andegave Société,
+                            ainsi que dans la restauration en qualité de serveur
+                            chez Dubrown Restaurant.
+                        </p>
+                    </details>
+                </section>
+
+                <section class="section" id="projets">
+                    <h2 class="section-heading" data-reveal data-i18n="sectionProjects">Projets informatiques</h2>
+
+                    <div class="project-list">
+                        <article class="project" data-reveal>
+                            <div class="project-header">
+                                <p class="project-number">01</p>
+
+                                <div>
+                                    <h3 data-i18n="projectOneTitle">Hangman — construire un jeu de A à Z</h3>
+                                    <p class="project-type" data-i18n="projectOneType">Projet Python · Epitech</p>
+                                </div>
+                            </div>
+
+                            <p class="project-intro" data-i18n="projectOneIntro">
+                                Un projet qui m'a accompagné dans mes premiers pas en
+                                programmation, en évoluant progressivement d'un jeu en
+                                terminal vers une application graphique.
+                            </p>
+
+                            <p class="project-description" data-i18n="projectOneDescription">
+                                J'ai commencé par construire la logique du jeu et la gestion
+                                des entrées utilisateur, puis ajouté progressivement une liste
+                                de mots externe, des arguments en ligne de commande, plusieurs
+                                niveaux de personnalisation et une gestion des erreurs.
+                                Le projet s'est ensuite enrichi avec un système de meilleurs
+                                scores et une interface graphique réalisée avec Pygame.
+                            </p>
+
+                            <div class="project-footer">
+                                <span>Python</span>
+                                <span>Argparse</span>
+                                <span>Pygame</span>
+                                <span>Git</span>
+                            </div>
+                        </article>
+                        <article class="project" data-reveal>
+                            <div class="project-header">
+                                <p class="project-number">02</p>
+
+                                <div>
+                                    <h3 data-i18n="projectTwoTitle">CV en ligne — apprendre en construisant</h3>
+                                    <p class="project-type" data-i18n="projectTwoType">Projet personnel</p>
+                                </div>
+                            </div>
+
+                            <p class="project-intro" data-i18n="projectTwoIntro">
+                                Ce CV est devenu un terrain d'expérimentation pour mettre
+                                directement en pratique ce que j'apprends en informatique.
+                            </p>
+
+                            <p class="project-description" data-i18n="projectTwoDescription">
+                                J'y travaille progressivement la structure d'une interface web,
+                                le responsive design, les animations et l'organisation du contenu.
+                                Le site évolue avec ma formation et reflète également mon parcours
+                                entre les sciences pharmaceutiques et le numérique.
+                            </p>
+
+                            <div class="project-footer">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="card section" id="contact" data-reveal>
+                    <h2 data-i18n="sectionContact">Me contacter</h2>
+                    <p data-i18n="contactDescription">
+                        Vous souhaitez échanger avec moi ?
+                        Envoyez-moi un message.
+                    </p>
+
+                    <form id="contact-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="name" data-i18n="formName">Nom</label>
+                            <input type="text" id="name" name="name"
+                                   autocomplete="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" data-i18n="formEmail">Adresse e-mail</label>
+                            <input type="email" id="email" name="email"
+                                   autocomplete="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" data-i18n="formSubject">Objet</label>
+                            <input type="text" id="subject" name="subject"
+                                   required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" data-i18n="formMessage">Message</label>
+                            <textarea id="message" name="message"
+                                      rows="5" required></textarea>
+                        </div>
+
+                        <button class="button button-primary" type="submit">
+                            <span data-i18n="formSubmit">Envoyer le message</span>
+                        </button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p data-i18n="footerText">Charles ABED · Santé numérique · Nantes</p>
+            <a href="#accueil" data-i18n="backToTop">Retour en haut ↑</a>
+        </div>
+    </footer>
+
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

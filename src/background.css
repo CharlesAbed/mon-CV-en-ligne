@@ -1,0 +1,15 @@
+.caduceus-background {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.caduceus {
+    width: min(520px, 60vw);
+    height: 75vh;
+    object-fit: contain;
+    opacity: 0.25;
+}
